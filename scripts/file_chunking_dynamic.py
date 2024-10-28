@@ -80,7 +80,9 @@ def is_float(value):
 def generate_customer_description(customer_data):
     """Generate a text description for a customer record."""
     return (
-        f"Customer {customer_data.get('Name', 'Unknown')} with ID of {customer_data.get('CustomerID', 'Unknown-')}, from the {customer_data.get('Clan', 'Unknown')} clan "
+        f"Customer {customer_data.get('Name', 'Unknown')} with ID of {customer_data.get('CustomerID', 'Unknown-')}, "
+        f" belonging to CSU {customer_data.get('CSU', 'Unknown')}, "
+        f"from the {customer_data.get('Clan', 'Unknown')} clan "
         f"in the {customer_data.get('Realm', 'Unknown')} realm, resides in the {customer_data.get('Region', 'Unknown')} "
         f"region. They have a geopolitical index of {customer_data.get('GeopoliticalIndex', 'N/A')} and an economic "
         f"health index of {customer_data.get('EconomicHealthIndex', 'N/A')}. Their preferred season is {customer_data.get('PreferredSeason', 'Unknown')}, and "
@@ -92,6 +94,7 @@ def generate_crm_description(crm_data):
     """Generate a text description for a CRM record."""
     return (
         f"Order {crm_data.get('OrderID', 'Unknown')} placed by customer {crm_data.get('CustomerID', 'Unknown')}, "
+        f" belonging to CSU {crm_data.get('CSU', 'Unknown')}, "
         f"was delivered from {crm_data.get('DeliveryFrom', 'Unknown')} to {crm_data.get('DeliveryTo', 'Unknown')} on "
         f"{crm_data.get('DeliveryDate', 'Unknown')}. The order consists of {crm_data.get('Quantity', 'Unknown')} units of Mithril "
         f"priced at {crm_data.get('PricePerUnitUSD', 'Unknown')} USD per unit, totaling {crm_data.get('TotalPriceUSD', 'Unknown')} USD. "

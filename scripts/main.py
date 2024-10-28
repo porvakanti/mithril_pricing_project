@@ -35,8 +35,8 @@ def main():
     # create_customer_index()
     # create_crm_index()
     print("Step 1: Creating search index")
-    create_mithril_index('customer')
-    create_mithril_index('crm')
+    #create_mithril_index('customer')
+    #create_mithril_index('crm')
 
     # Step 2: Chunk files and upload them to Azure AI Search
     # chunk_file('data', 'data/chunks', openai_client, azure_openai_embedding_model)
@@ -50,8 +50,8 @@ def main():
                search_index_client, search_crm_index_name)
 
     print("Step 3: uploading chunks to Azure AI Search")
-    upload_chunks_to_search(search_customer_client, 'data/chunks/customer_chunks')
-    upload_chunks_to_search(search_crm_client, 'data/chunks/crm_chunks')
+    #upload_chunks_to_search(search_customer_client, 'data/chunks/customer_chunks')
+    #upload_chunks_to_search(search_crm_client, 'data/chunks/crm_chunks')
 
     # Step 3: Simulate a user query
     query = "Explain Azure AI"

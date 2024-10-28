@@ -1,52 +1,101 @@
-| CustomerID   | Name        | Region     | Realm        | Clan     | Contact       |   GeopoliticalIndex |   EconomicHealthIndex | PreferredSeason   |   TransportationCostUSD |
-|:-------------|:------------|:-----------|:-------------|:---------|:--------------|--------------------:|----------------------:|:------------------|------------------------:|
-| CUST001      | Customer_1  | Gondor     | Rivendell    | Men      | +000-742-3624 |                 1   |                  1.1  | Winter            |                    2000 |
-| CUST002      | Customer_2  | Rhovanion  | Moria        | Hobbits  | +000-597-2221 |                 1.1 |                  1.05 | Autumn            |                    2200 |
-| CUST003      | Customer_3  | Gondor     | Rivendell    | Hobbits  | +000-760-5695 |                 1   |                  1.1  | Winter            |                    2000 |
-| CUST004      | Customer_4  | Rohan      | Dol Guldur   | Elves    | +000-170-4009 |                 1.2 |                  1    | Winter            |                    1500 |
-| CUST005      | Customer_5  | Mordor     | Isengard     | Dwarves  | +000-365-5656 |                 0.7 |                  0.85 | Winter            |                    3000 |
-| CUST006      | Customer_6  | Mirkwood   | Minas Tirith | Men      | +000-555-7312 |                 0.8 |                  1    | Spring            |                    1800 |
-| CUST007      | Customer_7  | Eriador    | Shire        | Elves    | +000-270-3102 |                 0.9 |                  0.95 | Winter            |                    2500 |
-| CUST008      | Customer_8  | Rohan      | Isengard     | Dwarves  | +000-289-7419 |                 1.2 |                  1    | Autumn            |                    1500 |
-| CUST009      | Customer_9  | Eriador    | Moria        | Men      | +000-251-6767 |                 0.9 |                  0.95 | Winter            |                    2500 |
-| CUST010      | Customer_10 | Mirkwood   | Shire        | Hobbits  | +000-477-2940 |                 0.8 |                  1    | Summer            |                    1800 |
-| CUST011      | Customer_11 | Mirkwood   | Shire        | Elves    | +000-637-6478 |                 0.8 |                  1    | Autumn            |                    1800 |
-| CUST012      | Customer_12 | Mirkwood   | Moria        | Men      | +000-755-2806 |                 0.8 |                  1    | Winter            |                    1800 |
-| CUST013      | Customer_13 | Mordor     | Rivendell    | Uruk-hai | +000-280-2090 |                 0.7 |                  0.85 | Spring            |                    3000 |
-| CUST014      | Customer_14 | Lothlórien | Dol Guldur   | Men      | +000-147-7788 |                 1.1 |                  1.2  | Spring            |                    1000 |
-| CUST015      | Customer_15 | Rohan      | Edoras       | Elves    | +000-509-9232 |                 1.2 |                  1    | Summer            |                    1500 |
-| CUST016      | Customer_16 | Gondor     | Rivendell    | Uruk-hai | +000-919-5881 |                 1   |                  1.1  | Spring            |                    2000 |
-| CUST017      | Customer_17 | Khazad-dûm | Shire        | Men      | +000-232-7308 |                 1   |                  1    | Summer            |                       0 |
-| CUST018      | Customer_18 | Lothlórien | Dol Guldur   | Elves    | +000-321-7624 |                 1.1 |                  1.2  | Summer            |                    1000 |
-| CUST019      | Customer_19 | Mordor     | Dol Guldur   | Orcs     | +000-179-8186 |                 0.7 |                  0.85 | Summer            |                    3000 |
-| CUST020      | Customer_20 | Eriador    | Shire        | Orcs     | +000-868-5982 |                 0.9 |                  0.95 | Summer            |                    2500 |
-| CUST021      | Customer_21 | Eriador    | Rivendell    | Uruk-hai | +000-222-9943 |                 0.9 |                  0.95 | Summer            |                    2500 |
-| CUST022      | Customer_22 | Rhovanion  | Edoras       | Uruk-hai | +000-177-1995 |                 1.1 |                  1.05 | Autumn            |                    2200 |
-| CUST023      | Customer_23 | Mordor     | Shire        | Dwarves  | +000-264-2606 |                 0.7 |                  0.85 | Summer            |                    3000 |
-| CUST024      | Customer_24 | Eriador    | Isengard     | Dwarves  | +000-185-7960 |                 0.9 |                  0.95 | Summer            |                    2500 |
-| CUST025      | Customer_25 | Mirkwood   | Moria        | Elves    | +000-674-8251 |                 0.8 |                  1    | Winter            |                    1800 |
-| CUST026      | Customer_26 | Mirkwood   | Shire        | Dwarves  | +000-976-3783 |                 0.8 |                  1    | Winter            |                    1800 |
-| CUST027      | Customer_27 | Lothlórien | Minas Tirith | Dwarves  | +000-892-5567 |                 1.1 |                  1.2  | Autumn            |                    1000 |
-| CUST028      | Customer_28 | Khazad-dûm | Isengard     | Men      | +000-803-6818 |                 1   |                  1    | Spring            |                       0 |
-| CUST029      | Customer_29 | Rhovanion  | Rivendell    | Uruk-hai | +000-967-7476 |                 1.1 |                  1.05 | Autumn            |                    2200 |
-| CUST030      | Customer_30 | Lothlórien | Moria        | Uruk-hai | +000-389-4443 |                 1.1 |                  1.2  | Summer            |                    1000 |
-| CUST031      | Customer_31 | Rhovanion  | Moria        | Men      | +000-947-8242 |                 1.1 |                  1.05 | Spring            |                    2200 |
-| CUST032      | Customer_32 | Mordor     | Moria        | Elves    | +000-696-8316 |                 0.7 |                  0.85 | Spring            |                    3000 |
-| CUST033      | Customer_33 | Rohan      | Moria        | Uruk-hai | +000-263-4138 |                 1.2 |                  1    | Summer            |                    1500 |
-| CUST034      | Customer_34 | Eriador    | Rivendell    | Elves    | +000-840-3973 |                 0.9 |                  0.95 | Winter            |                    2500 |
-| CUST035      | Customer_35 | Eriador    | Shire        | Uruk-hai | +000-739-5742 |                 0.9 |                  0.95 | Summer            |                    2500 |
-| CUST036      | Customer_36 | Rohan      | Isengard     | Hobbits  | +000-755-8524 |                 1.2 |                  1    | Summer            |                    1500 |
-| CUST037      | Customer_37 | Rhovanion  | Shire        | Men      | +000-331-5811 |                 1.1 |                  1.05 | Summer            |                    2200 |
-| CUST038      | Customer_38 | Eriador    | Shire        | Dwarves  | +000-933-9985 |                 0.9 |                  0.95 | Winter            |                    2500 |
-| CUST039      | Customer_39 | Khazad-dûm | Minas Tirith | Orcs     | +000-434-9768 |                 1   |                  1    | Winter            |                       0 |
-| CUST040      | Customer_40 | Mordor     | Minas Tirith | Elves    | +000-466-2441 |                 0.7 |                  0.85 | Winter            |                    3000 |
-| CUST041      | Customer_41 | Rohan      | Isengard     | Uruk-hai | +000-319-2052 |                 1.2 |                  1    | Autumn            |                    1500 |
-| CUST042      | Customer_42 | Lothlórien | Shire        | Orcs     | +000-231-8104 |                 1.1 |                  1.2  | Summer            |                    1000 |
-| CUST043      | Customer_43 | Lothlórien | Edoras       | Men      | +000-393-7703 |                 1.1 |                  1.2  | Spring            |                    1000 |
-| CUST044      | Customer_44 | Lothlórien | Rivendell    | Men      | +000-292-5549 |                 1.1 |                  1.2  | Summer            |                    1000 |
-| CUST045      | Customer_45 | Mordor     | Shire        | Dwarves  | +000-614-1209 |                 0.7 |                  0.85 | Winter            |                    3000 |
-| CUST046      | Customer_46 | Lothlórien | Dol Guldur   | Men      | +000-799-2459 |                 1.1 |                  1.2  | Autumn            |                    1000 |
-| CUST047      | Customer_47 | Lothlórien | Isengard     | Uruk-hai | +000-538-1954 |                 1.1 |                  1.2  | Summer            |                    1000 |
-| CUST048      | Customer_48 | Rhovanion  | Dol Guldur   | Uruk-hai | +000-283-8438 |                 1.1 |                  1.05 | Summer            |                    2200 |
-| CUST049      | Customer_49 | Khazad-dûm | Rivendell    | Dwarves  | +000-637-8926 |                 1   |                  1    | Winter            |                       0 |
-| CUST050      | Customer_50 | Eriador    | Rivendell    | Uruk-hai | +000-741-3602 |                 0.9 |                  0.95 | Spring            |                    2500 |
+CustomerID|Name|Region|Realm|Clan|Contact|GeopoliticalIndex|EconomicHealthIndex|PreferredSeason|TransportationCostUSD|CSU
+CUST073|Isildur|Rohan|Elf|Dwarf|contact11@mithril.com|1.3215016457408864|1.1253155132605963|Autumn|2076.910030938705|South
+CUST099|Pippin Took|Rivendell|Hobbit|Hobbit|contact28@mithril.com|1.3949003782848717|0.5247633320932824|Autumn|1919.918988105046|East
+CUST088|Glorfindel|Mordor|Dwarf|Elf|contact65@mithril.com|0.6894432153232936|1.2309950990396379|Autumn|1476.157885046696|North
+CUST054|Thranduil|Rivendell|Maiar|Dwarf|contact37@mithril.com|1.1538651530389805|0.6177158315835295|Autumn|1575.286304300744|West
+CUST087|Silmariën|Mordor|Orc|Maiar|contact38@mithril.com|0.5656376424071582|1.396682588174944|Autumn|1682.037627191868|North
+CUST055|Bilbo Baggins|Lothlórien|Orc|Maiar|contact81@mithril.com|1.302864837214094|0.818976881763467|Autumn|3884.159439889798|North
+CUST064|Arwen|Lothlórien|Elf|Hobbit|contact56@mithril.com|0.752203329008423|1.2831276106862446|Winter|4792.607667604578|West
+CUST039|Saruman|Lothlórien|Elf|Elf|contact48@mithril.com|1.1891911697451474|1.4967229971008484|Spring|3778.9238486985773|South
+CUST035|Oropher|Mordor|Human|Human|contact84@mithril.com|0.5508467313621168|0.8162385284006283|Winter|3345.0660012999765|East
+CUST045|Tolkien|Lothlórien|Orc|Human|contact67@mithril.com|1.1530734895160513|1.4011340175159255|Spring|2367.506112023453|North
+CUST011|Tolkien|Rivendell|Orc|Human|contact95@mithril.com|0.5585630263107026|1.2381625297336663|Autumn|2321.01684308079|South
+CUST093|Hurin|Shire|Elf|Orc|contact15@mithril.com|1.3489166510211243|1.1212267514476904|Winter|2659.967576449876|South
+CUST059|Earendil|Shire|Elf|Maiar|contact98@mithril.com|1.0940256598657907|1.3929631168898682|Autumn|4386.52177236242|South
+CUST076|Pippin Took|Lothlórien|Orc|Maiar|contact74@mithril.com|1.2390274858732302|1.3312861988451132|Autumn|3131.9149131223817|North
+CUST094|Ulmo|Shire|Elf|Maiar|contact53@mithril.com|0.9476530594964041|0.5174468684919193|Spring|2222.442760221345|East
+CUST054|Celebrimbor|Gondor|Elf|Elf|contact28@mithril.com|1.3824515179402672|0.6279038302272165|Autumn|1401.92018054561|West
+CUST086|Beren|Shire|Elf|Maiar|contact83@mithril.com|1.467677971923087|1.1282049302894328|Winter|4155.3590063905485|West
+CUST069|Voronwe|Lothlórien|Hobbit|Human|contact57@mithril.com|0.811226357678045|1.4679997345467388|Autumn|3992.47718561883|North
+CUST083|Treebeard|Shire|Elf|Hobbit|contact1@mithril.com|1.416979818561511|1.4694245903105645|Summer|3230.1787447323095|North
+CUST047|Thorin Oakenshield|Gondor|Maiar|Maiar|contact52@mithril.com|1.439720633934824|0.9833256356424896|Autumn|2790.9819340665717|West
+CUST073|Ar-Pharazon|Gondor|Elf|Orc|contact62@mithril.com|0.5276626785870516|1.1758172712865402|Spring|4141.735215442158|South
+CUST089|Aredhel|Rohan|Human|Orc|contact18@mithril.com|1.1204073742628715|1.4463443750192386|Winter|3760.3240617038514|North
+CUST021|Samwise Gamgee|Mordor|Hobbit|Dwarf|contact53@mithril.com|0.9929739167875475|1.0972338258914933|Summer|2979.7352862460516|East
+CUST029|Beleg|Mordor|Elf|Hobbit|contact100@mithril.com|1.0847345378285116|1.4606458378085105|Summer|2188.383352338129|North
+CUST087|Turgon|Lothlórien|Maiar|Orc|contact18@mithril.com|1.499563899814969|1.2626935672185928|Autumn|3942.8648604364876|North
+CUST086|Thingol|Rivendell|Hobbit|Orc|contact60@mithril.com|1.200520313826511|0.8723486238341028|Winter|4921.940616764132|North
+CUST022|Turgon|Lothlórien|Maiar|Human|contact69@mithril.com|1.1286264476276326|1.4134440392287917|Summer|3927.029330150647|West
+CUST032|Elrond|Rohan|Dwarf|Orc|contact57@mithril.com|1.4058349110038906|1.199443839755563|Winter|4212.176817060013|South
+CUST032|Theoden|Rivendell|Maiar|Maiar|contact14@mithril.com|0.9894198806955858|1.1378841671970596|Winter|2439.858800378968|West
+CUST093|Nerdanel|Shire|Orc|Orc|contact1@mithril.com|0.9304071866706198|0.7560793615693833|Summer|4564.814709209319|North
+CUST086|Thorin Oakenshield|Gondor|Human|Human|contact21@mithril.com|1.4140347487163407|1.1760562878086271|Autumn|2767.0530224474314|East
+CUST048|Mablung|Shire|Dwarf|Human|contact83@mithril.com|1.1840106957501617|1.4177269751460377|Spring|1959.5656864505927|South
+CUST011|Elros|Mordor|Dwarf|Dwarf|contact12@mithril.com|0.6834762470613164|0.7280815910298544|Spring|1200.4375559237146|South
+CUST092|Melian|Gondor|Human|Maiar|contact18@mithril.com|1.450146680925538|0.5899602236482486|Summer|1289.351381208053|East
+CUST090|Finarfin|Mordor|Human|Hobbit|contact95@mithril.com|0.5036694760657808|1.2226884781057483|Winter|1510.5163773812756|South
+CUST036|Balin|Rivendell|Human|Maiar|contact2@mithril.com|1.4501942813369588|0.9507296484937635|Spring|1302.561338548109|South
+CUST057|Shelob|Gondor|Hobbit|Human|contact82@mithril.com|0.945658510524036|0.791854474983334|Summer|4983.808319112706|South
+CUST042|Halbrand|Gondor|Orc|Dwarf|contact85@mithril.com|1.271001056695885|0.541369446834996|Summer|1185.2887935631666|East
+CUST054|Elwing|Lothlórien|Human|Dwarf|contact29@mithril.com|0.7491042289099101|1.2920471770417614|Spring|1819.1536529579753|West
+CUST085|Silmariën|Rivendell|Orc|Orc|contact45@mithril.com|0.5711469231467888|1.2976691628752088|Spring|3642.5267307242107|West
+CUST085|Shelob|Rohan|Elf|Maiar|contact82@mithril.com|0.7927460712606956|1.2127849876727086|Autumn|1671.3867243457523|North
+CUST043|Voronwe|Shire|Human|Orc|contact23@mithril.com|1.0114166377251501|0.7711415088878684|Summer|4592.013806439048|West
+CUST010|Ar-Pharazon|Shire|Hobbit|Human|contact38@mithril.com|0.7345811135872801|0.6598797909733216|Autumn|3634.470079815668|East
+CUST078|Finrod|Shire|Elf|Dwarf|contact8@mithril.com|1.4709663469921885|0.5899378841766371|Summer|4158.029576687883|South
+CUST045|Huan|Shire|Maiar|Hobbit|contact57@mithril.com|0.8049719052825444|0.7797906949102739|Spring|3138.305300609503|North
+CUST053|Yavanna|Gondor|Hobbit|Human|contact36@mithril.com|0.643048843299282|0.5976959799564279|Summer|4312.6616255475155|North
+CUST061|Elwing|Lothlórien|Dwarf|Orc|contact96@mithril.com|1.355659372881228|1.1057933202042376|Autumn|2329.6626562429096|East
+CUST083|Maeglin|Mordor|Elf|Elf|contact91@mithril.com|1.02432779750308|1.0305418230581973|Autumn|3696.6967689907947|North
+CUST052|Fili|Rohan|Elf|Dwarf|contact53@mithril.com|1.0016969409853544|1.4707732972885812|Spring|4972.6207202755|East
+CUST025|Gorlim|Rivendell|Dwarf|Maiar|contact71@mithril.com|1.010470208166836|0.7099604440273565|Spring|3248.812106580393|West
+CUST065|Galadriel|Shire|Hobbit|Hobbit|contact67@mithril.com|1.1628646890156364|1.1620812686616615|Winter|4971.286994160752|East
+CUST021|Indis|Rohan|Human|Human|contact83@mithril.com|1.3971413261973749|0.7615405200602188|Autumn|3196.8826695432617|West
+CUST095|Pippin Took|Shire|Orc|Human|contact2@mithril.com|0.9048886193025227|1.3748143944544862|Spring|3765.584500554958|North
+CUST027|Ulmo|Lothlórien|Maiar|Dwarf|contact67@mithril.com|0.5315616919772782|0.5385916148064253|Summer|2457.25890119423|East
+CUST054|Tar-Minastir|Gondor|Dwarf|Hobbit|contact72@mithril.com|0.6310164770715317|1.1677843965391745|Summer|1485.0526913799263|West
+CUST066|Gorlim|Rivendell|Orc|Elf|contact12@mithril.com|0.943057449152487|0.6986379694799807|Summer|4555.54586304893|East
+CUST045|Mablung|Gondor|Human|Dwarf|contact53@mithril.com|1.4522454253281678|0.5171186735489958|Winter|1670.9824224241077|East
+CUST076|Glaurung|Lothlórien|Maiar|Dwarf|contact12@mithril.com|0.9099327756695662|1.269546518569793|Spring|2330.9006653503966|North
+CUST011|Varda|Rohan|Maiar|Hobbit|contact19@mithril.com|1.3950052608704806|0.7630479816707573|Summer|3378.974634458622|East
+CUST042|Thranduil|Lothlórien|Elf|Hobbit|contact60@mithril.com|0.6063214100143057|1.4671514007639848|Summer|3179.562428321517|North
+CUST090|Varda|Shire|Hobbit|Maiar|contact100@mithril.com|0.7226960326867118|0.9371386830468365|Spring|1897.2329382763883|South
+CUST073|Galadriel|Gondor|Hobbit|Dwarf|contact35@mithril.com|0.8170165064312839|0.5964389543905456|Summer|4994.942162037272|North
+CUST066|Gorlim|Rivendell|Elf|Maiar|contact24@mithril.com|0.7041949988476353|1.381410392617998|Summer|3326.4788512925934|North
+CUST069|Morwen|Mordor|Human|Elf|contact52@mithril.com|0.80360154523527|1.3186181032363493|Spring|4024.453556565122|North
+CUST081|Grima Wormtongue|Rivendell|Human|Hobbit|contact83@mithril.com|1.2455342899946193|0.7514051560213851|Summer|3670.6189324464635|West
+CUST076|Eomer|Shire|Dwarf|Elf|contact99@mithril.com|1.3121297031756256|1.0558188726923294|Spring|3057.891785885486|South
+CUST064|Samwise Gamgee|Rohan|Elf|Orc|contact27@mithril.com|1.3841376096901508|0.7075314983566129|Summer|1913.2648637366642|South
+CUST051|Tolkien|Gondor|Orc|Elf|contact26@mithril.com|1.3078421985086657|0.8685195489980566|Autumn|1642.7711475362323|South
+CUST090|Manwe|Rohan|Human|Orc|contact10@mithril.com|0.8429795387345775|0.8081238211328223|Winter|3977.9319719420887|West
+CUST011|Maedhros|Shire|Elf|Maiar|contact68@mithril.com|1.317559166883532|1.2525566704986906|Autumn|4722.234086853778|East
+CUST084|Beren|Shire|Maiar|Human|contact21@mithril.com|1.171493591915365|1.006677582259591|Autumn|4190.5244652802685|South
+CUST079|Gandalf|Rivendell|Hobbit|Human|contact87@mithril.com|1.1224308615606224|0.6550126590784677|Summer|3296.7010358880093|South
+CUST067|Adar|Mordor|Human|Elf|contact59@mithril.com|0.516880456790031|0.7107098233789355|Autumn|1305.5672364891482|West
+CUST029|Curufin|Mordor|Human|Hobbit|contact37@mithril.com|1.1239592462071883|0.9339962925079398|Spring|4455.16243495141|East
+CUST070|Halbrand|Mordor|Human|Elf|contact11@mithril.com|1.3661586345023078|0.5307968261403526|Winter|2712.600206878638|West
+CUST095|Caranthir|Rohan|Human|Orc|contact35@mithril.com|1.3252121420501781|1.2592131945195546|Winter|1958.2976432802197|West
+CUST007|Celegorm|Rohan|Dwarf|Dwarf|contact39@mithril.com|0.8952969615467369|1.0580571425948029|Spring|2905.1885573233303|North
+CUST099|Ancalagon|Gondor|Human|Orc|contact67@mithril.com|0.9672487424086681|0.7357763963827602|Winter|1319.9364275839512|North
+CUST095|Gil-galad|Rohan|Human|Dwarf|contact75@mithril.com|0.7282395488229647|1.197537803969409|Autumn|3183.37815867079|East
+CUST023|Merry Brandybuck|Gondor|Elf|Human|contact20@mithril.com|1.3484679341513661|1.1209471840232341|Spring|4020.1878995482534|North
+CUST011|Balin|Rivendell|Maiar|Elf|contact42@mithril.com|1.3421133812491135|0.8371066822677667|Summer|1127.5589346080808|West
+CUST096|Gollum|Rohan|Human|Orc|contact99@mithril.com|1.4426488663557002|1.1125356129544794|Winter|2573.6867349011886|South
+CUST047|Boromir|Shire|Dwarf|Dwarf|contact50@mithril.com|0.8494530203983378|0.560040935030875|Summer|2525.521539878814|South
+CUST090|Gorlim|Rivendell|Maiar|Human|contact81@mithril.com|0.8036731699282758|0.7452830444336062|Spring|1233.4663127139459|East
+CUST011|Voronwe|Lothlórien|Maiar|Human|contact56@mithril.com|0.583922963238974|1.0030020425135047|Winter|2024.9858872974214|South
+CUST097|Maglor|Rivendell|Human|Hobbit|contact88@mithril.com|0.6176128560631227|0.6788682450996517|Winter|4335.710331126893|West
+CUST035|Shelob|Rivendell|Maiar|Maiar|contact58@mithril.com|1.2678656925988032|1.4415385128101734|Summer|2297.4588747202006|East
+CUST019|Maglor|Lothlórien|Dwarf|Human|contact10@mithril.com|0.5177662439622445|1.2099169654418263|Autumn|1035.560972820595|North
+CUST056|Gil-galad|Rohan|Dwarf|Hobbit|contact59@mithril.com|1.2997684079933518|0.8725192054686012|Spring|1668.1507496438637|West
+CUST062|Morwen|Shire|Human|Orc|contact34@mithril.com|0.5364207272671304|1.4514747065384475|Winter|2583.130315572409|East
+CUST032|Galadriel|Gondor|Hobbit|Orc|contact60@mithril.com|0.5178690453791585|1.235037288497745|Spring|3062.678539460669|North
+CUST050|Nerdanel|Mordor|Human|Maiar|contact62@mithril.com|1.4214584957297052|0.5984809630134141|Winter|4535.775409509264|North
+CUST096|Celegorm|Shire|Human|Orc|contact5@mithril.com|0.9116972533360658|0.662602398242697|Spring|4672.6692211118425|East
+CUST077|Anarion|Rivendell|Human|Maiar|contact15@mithril.com|1.0188643866467453|1.0547232790471814|Spring|1753.0936898663817|West
+CUST060|Samwise Gamgee|Mordor|Orc|Hobbit|contact50@mithril.com|1.1514387423005847|0.7151953799513355|Winter|1413.6703680378328|East
+CUST046|Denethor|Lothlórien|Human|Dwarf|contact66@mithril.com|0.5937195989857528|1.0203304335355479|Winter|4464.531335520243|North
+CUST070|Elwing|Lothlórien|Elf|Hobbit|contact60@mithril.com|1.3919909123093879|0.637190577730946|Autumn|1336.6192590886578|West
+CUST080|Thorin Oakenshield|Gondor|Hobbit|Dwarf|contact34@mithril.com|1.049759740225908|0.7559771013544335|Winter|1236.407157403522|West
+CUST079|Celebrimbor|Lothlórien|Dwarf|Maiar|contact100@mithril.com|0.5624304512029608|0.7105241354233317|Summer|3271.6068735339454|East
+CUST006|Yavanna|Shire|Elf|Hobbit|contact32@mithril.com|0.8804643782817392|1.0312976130034328|Winter|2078.9926113479246|South
